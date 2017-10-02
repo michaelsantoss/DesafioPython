@@ -1,0 +1,8 @@
+ECHOiniciar a produção do MOTOR
+
+
+ECHOEsteira parou
+ECHOPROCESSO DO MOTOR INICIADO
+ECHOExecutando, em transporte
+DONE1OK
+
