@@ -3,6 +3,6 @@
 # BIBLIOTECA: PYTHONSERIAL - DOWNLOAD: https://www.dropbox.com/s/yhe0hlx4pjh8p58/pyserial-2.7.win32.exe?dl=0
 
 
-# OBS: Quando for implementar o código, não esquecer de alterar o valor da PORTA SERIAL
-# no inicio do código e no bloco da estação 5.
+ OBS: Quando for implementar o código, não esquecer de alterar o valor da PORTA SERIAL
+ no inicio do código e no bloco da estação 5.
 
