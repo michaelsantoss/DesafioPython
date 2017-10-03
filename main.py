@@ -5,6 +5,7 @@ while(1):
         
     #FUNÇÃO PEPE JA TIREI A VELA
     #SETA NA MÃO, QUAL VAI INICIAR
+    
     #DO1M - MOTOR ou DO1R - RODA
     
     valor = raw_input("Digite o valor: ");
@@ -20,10 +21,10 @@ while(1):
     resposta = str(ser.read(3));
     print resposta
     if(resposta=="OK1"):
-        arquivo = open('entrada.txt', 'a')
-        objeto_mensagem = "ECHOESTAÇÃO 1";
-        arquivo.write('%s\n' % objeto_mensagem);
-        arquivo.close()
+        arquivo = open('entrada.txt', 'a');#ABRE O ARQUIVO TXT
+        objeto_mensagem = "ECHOESTAÇÃO 1";#SALVA NA VARIAVEL O QUE QUER ARMAZENAR NO TXT
+        arquivo.write('%s\n' % objeto_mensagem);#ESCREVE NO ARQUIVO
+        arquivo.close()#FECHA O ARQUIVO
         if(objeto == "Motor"):
             arquivo = open('entrada.txt', 'a')
             objeto_mensagem = "ECHOiniciar a produção do MOTOR";
@@ -60,18 +61,18 @@ while(1):
                
             #PEGA A RESPOSTA DA SEGUNDA ESTAï¿½ï¿½O  
             resposta = str(ser.read(3));
-            if(resposta=="OK2"):
+            if(resposta=="OK2"):#TESTA A RESPOSTA
                 arquivo = open('entrada.txt', 'a')
                 objeto_mensagem = "ECHOESTAÇÃO 2";
                 arquivo.write('%s\n' % objeto_mensagem);
                 arquivo.close()
                 if(objeto == "Motor"):
-                    arquivo = open('entrada.txt', 'a')
-                    objeto_mensagem = "ECHOInicia a uzinagem do MOTOR";
-                    print ("Inicia a uzinagem do MOTOR");
-                    arquivo.write('%s\n' % objeto_mensagem);
-                    arquivo.write('\n')
-                    arquivo.close()
+                    arquivo = open('entrada.txt', 'a')#ABRE O ARQUIVO TXT
+                    objeto_mensagem = "ECHOInicia a uzinagem do MOTOR";#SALVA NA VARIAVEL O QUE QUER ARMAZENAR NO TXT
+                    print ("Inicia a uzinagem do MOTOR");#MOSTRA NO CONSOLE O QUE TA FAZENDO
+                    arquivo.write('%s\n' % objeto_mensagem);#ESCREVE NO ARQUIVO A STRING
+                    arquivo.write('\n')#ESCREVE UM \N PARA GARANTIR
+                    arquivo.close()#FECHA O ARQUIVO
                 else:
                     arquivo = open('entrada.txt', 'a')
                     objeto_mensagem = "ECHOInicia a uzinagem da RODA";
